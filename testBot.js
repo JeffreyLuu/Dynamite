@@ -18,7 +18,7 @@ class Bot {
             return this.randomMove(3)
         }
         else {
-            let n = Math.floor((Math.random)*600);
+            let n = Math.floor((Math.random)*100);
             if(n < this.dynamiteCount) {
                 this.dynamiteCount -= 1
                 return "D"
