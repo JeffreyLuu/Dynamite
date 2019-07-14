@@ -1,4 +1,5 @@
 class Bot {
+    // a bot that copies the opponent's moves 
 
     constructor() {
         this.dynamiteCount = 100
@@ -11,7 +12,7 @@ class Bot {
 
     randomCounterMove(gamestate) {
         // console.log(gamestate)
-        let move = gamestate['rounds'][gamestate['rounds'].length -3]['p2']
+        let move = gamestate['rounds'][gamestate['rounds'].length - 2]['p2']
         let counterMoves = this.counterMove(move)[1]
         if(counterMoves.length == 1) {return counterMoves[0]}
         else if(counterMoves.length == 3) {
